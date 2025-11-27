@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard ASIRTE - Evaluaciones</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .header {
+      width: 100%;
+      background-color: #005373;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .header p {
+      margin: 5px 0 0 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    .logo-container {
+      width: 100%;
+      background-color: white;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid #005373;
+    }
+    .logo {
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .dashboard-container {
+      width: 95%;
+      max-width: 1200px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: white;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .dashboard-iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      display: block;
+    }
+    .footer {
+      width: 100%;
+      background-color: #f0f0f0;
+      color: #666;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .dashboard-iframe {
+        height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado principal -->
+  <div class="header">
+    <h1>Dashboard ASIRTE</h1>
+    <p>Evaluaciones de Clientes - Resumen en Vivo</p>
+  </div>
+
+  <!-- Logo de ASIRTE -->
+  <div class="logo-container">
+    <img src="https://asirtecuba.github.io/asirte-evaluacion/logo-asirte.png" alt="Logo ASIRTE" class="logo">
+  </div>
+
+  <!-- Contenedor del Dashboard -->
+  <div class="dashboard-container">
+    <iframe 
+      class="dashboard-iframe"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSZjcvUW0JJdHspPxbfCpQG5eNsHftOhksn0dhg5_EzyFfPbOYhYvdru1Bs4Pde_NEU_xI0gC5ESaI5/pubhtml?gid=1984396548&single=true"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Pie de página -->
+  <div class="footer">
+    Actualizado en tiempo real desde Google Sheets | © ASIRTE
+  </div>
+
+</body>
+</html>
