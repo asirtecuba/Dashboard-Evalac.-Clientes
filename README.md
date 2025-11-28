@@ -1,2 +1,1 @@
-# Dashboard-Evalac.-Clientes
-Dashboard público de evaluaciones ASIRTE
+Dashboard público de retralimentacion de clientes ASIRTE
